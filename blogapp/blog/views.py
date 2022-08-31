@@ -13,4 +13,4 @@ def blogs(request):
 
 
 def blog_details(request):
-    return HttpResponse("blog details")
+    return HttpResponse("blog details" + str(id))

@@ -1,4 +1,7 @@
 {% extends "base.html" %}
+{% load static %}
+
+
 
 {% block title %} Blogs {% endblock %}
 
@@ -16,7 +19,9 @@
             <hr>
             
             {% for blog in blogs %}
-                {% include 'blog/partials/_blog.html' %}
+                {% if blog.is_active %}
+                    {% include 'blog/partials/_blog.html' %}
+                {% endif %}
             {% endfor %}
 
 
@@ -25,4 +30,8 @@
     </div>
 </div>
 
-{% endblock %} 
+{% endblock %}
+
+{% block js_files %}
+    <script src="{% static 'blog/js/script.js' %}"></script>
+{% endblock %}

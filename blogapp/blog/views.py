@@ -10,6 +10,7 @@ data = {
             "title":"komple web geliştirme",
             "image":"1.jpg",
             "is_active":True,
+            "is_home":False,
             "description":"Çok iyi bir kurs",
         },
         {
@@ -17,22 +18,18 @@ data = {
             "title":"Python Kursu",
             "image":"2.jpg",
             "is_active":True,
+            "is_home":True,
             "description":"Çok iyi bir kurs",
         },
         {
             "id":3,
             "title":"Django Kursu",
             "image":"3.jpg",
-            "is_active":True,
-            "description":"Çok iyi bir kurs",
-        },
-        {
-            "id":4,
-            "title":"Java",
-            "image":"4.jpg",
             "is_active":False,
+            "is_home":True,
             "description":"Çok iyi bir kurs",
         },
+        
 
     ]
 }

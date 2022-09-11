@@ -40,3 +40,8 @@ def blog_details(request, slug):
     return render(request, "blog/blog-details.html", {
         "blog": blog
     })
+
+
+
+def blogs_by_category(request, slug):
+    pass

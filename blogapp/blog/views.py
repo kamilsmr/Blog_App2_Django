@@ -1,7 +1,7 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
-from blog.models import Blog
-from blogapp.blog.models import Category
+from blog.models import Blog, Category
+
 
 # Create your views here.
 
